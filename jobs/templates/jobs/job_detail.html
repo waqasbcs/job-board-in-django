@@ -1,0 +1,18 @@
+{% extends 'jobs/base.html' %}
+
+{% block title %}{{ job.title }}{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>{{ job.title }}</h2>
+        <h5>{{ job.company.name }}</h5>
+    </div>
+    <div class="card-body">
+        <h6 class="card-subtitle mb-2 text-muted">{{ job.location }}</h6>
+        <p class="card-text">{{ job.description }}</p>
+        <p class="card-text"><strong>Salary:</strong> {{ job.salary }}</p>
+        <a href="{% url 'apply_for_job' job.id %}" class="btn btn-primary">Apply for this job</a>
+    </div>
+</div>
+{% endblock %}
