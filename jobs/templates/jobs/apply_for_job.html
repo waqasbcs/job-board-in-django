@@ -1,0 +1,25 @@
+{% extends 'jobs/base.html' %}
+
+{% block title %}Apply for {{ job.title }}{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h2>Apply for {{ job.title }}</h2>
+    </div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form.resume.label_tag }}
+                {{ form.resume }}
+            </div>
+            <div class="form-group">
+                {{ form.cover_letter.label_tag }}
+                {{ form.cover_letter }}
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Application</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

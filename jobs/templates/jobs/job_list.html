@@ -1,0 +1,24 @@
+{% extends 'jobs/base.html' %}
+
+{% block title %}Job Listings{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Job Listings</h1>
+    <p class="lead">Browse the latest job openings.</p>
+</div>
+<div class="row">
+    {% for job in jobs %}
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">{{ job.title }}</h5>
+                <p class="card-text">{{ job.company.name }}</p>
+                <p class="card-text">{{ job.location }}</p>
+                <a href="{% url 'job_detail' job_id=job.id slug=job.slug %}" class="btn btn-primary">View Job</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
