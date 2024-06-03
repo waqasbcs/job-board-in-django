@@ -19,7 +19,8 @@ def apply_for_job(request, job_id):
             application.user = request.user
             application.job = job
             application.save()
-            return redirect('job_detail', job_id=job.id)
+            # Redirect to the job list page after application submission
+            return redirect('job_list')
     else:
         form = ApplicationForm()
     return render(request, 'jobs/apply_for_job.html', {'form': form, 'job': job})
