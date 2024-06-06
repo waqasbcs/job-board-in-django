@@ -10,6 +10,12 @@ This is a Django-based web application for posting and applying to jobs.
 - Profile management
 - Resume upload
 
+![job board Screenshot](https://github.com/waqasbcs/job-board-in-django/blob/main/screenshots/WhatsApp%20Image%202024-06-04%20at%2012.02.01_fff83d6c.jpg)
+![job board Screenshot](https://github.com/waqasbcs/job-board-in-django/blob/main/screenshots/WhatsApp%20Image%202024-06-05%20at%2007.58.49_207edacf.jpg)
+![job board Screenshot](https://github.com/waqasbcs/job-board-in-django/blob/main/screenshots/WhatsApp%20Image%202024-06-05%20at%2007.59.33_7675aa65.jpg)
+
+
+
 ## Installation
 
 ### Prerequisites
@@ -66,3 +72,10 @@ This project is licensed under the MIT License.
 ## Contact
 
 - GitHub: [waqasbcs](https://github.com/waqasbcs)
+
+
+
+
+
+
+
